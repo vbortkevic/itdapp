@@ -28,7 +28,7 @@ var routes = [
     path: "/dashboard",
     name: "Dashboard",
     rtlName: "لوحة القيادة",
-    icon: "tim-icons icon-chart-pie-36",
+    icon: "fas fa-chart-line",
     component: Dashboard,
     layout: "/admin"
   },
@@ -36,7 +36,15 @@ var routes = [
     path: "/icons",
     name: "earthquake risks",
     rtlName: "الرموز",
-    icon: "tim-icons icon-atom",
+    icon: "fas fa-exclamation-triangle",
+    component: Icons,
+    layout: "/admin"
+  },
+  {
+    path: "/icons",
+    name: "Overtopping risks",
+    rtlName: "الرموز",
+    icon: "fas fa-sort-amount-up",
     component: Icons,
     layout: "/admin"
   },
@@ -44,7 +52,7 @@ var routes = [
     path: "/map",
     name: "slope stability",
     rtlName: "خرائط",
-    icon: "tim-icons icon-pin",
+    icon: "fas fa-grip-lines",
     component: Map,
     layout: "/admin"
   },
@@ -52,7 +60,7 @@ var routes = [
     path: "/user-profile",
     name: "Areal Photos",
     rtlName: "ملف تعريفي للمستخدم",
-    icon: "tim-icons icon-single-02",
+    icon: "fab fa-avianex",
     component: UserProfile,
     layout: "/admin"
   },
@@ -61,7 +69,7 @@ var routes = [
     path: "/tables",
     name: "Ground sensors",
     rtlName: "قائمة الجدول",
-    icon: "tim-icons icon-puzzle-10",
+    icon: "fas fa-record-vinyl",
     component: TableList,
     layout: "/admin"
   },
@@ -69,7 +77,23 @@ var routes = [
     path: "/tables",
     name: "Weather sensors",
     rtlName: "قائمة الجدول",
-    icon: "tim-icons icon-puzzle-10",
+    icon: "fas fa-cloud-moon-rain",
+    component: TableList,
+    layout: "/admin"
+  },
+  {
+    path: "/tables",
+    name: "Water sensors",
+    rtlName: "قائمة الجدول",
+    icon: "fas fa-water",
+    component: TableList,
+    layout: "/admin"
+  },
+  {
+    path: "/tables",
+    name: "Alerts",
+    rtlName: "قائمة الجدول",
+    icon: "fas fa-bell",
     component: TableList,
     layout: "/admin"
   },
@@ -77,23 +101,15 @@ var routes = [
     path: "/notifications",
     name: "Reports",
     rtlName: "إخطارات",
-    icon: "tim-icons icon-bell-55",
+    icon: "fas fa-clipboard-list",
     component: Notifications,
-    layout: "/admin"
-  },
-  {
-    path: "/tables",
-    name: "Audits",
-    rtlName: "قائمة الجدول",
-    icon: "tim-icons icon-puzzle-10",
-    component: TableList,
     layout: "/admin"
   },
   {
     path: "/typography",
     name: "Logs",
     rtlName: "طباعة",
-    icon: "tim-icons icon-align-center",
+    icon: "fas fa-book",
     component: Typography,
     layout: "/admin"
   }
