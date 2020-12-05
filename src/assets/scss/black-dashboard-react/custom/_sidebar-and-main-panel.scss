@@ -33,6 +33,7 @@
   margin-left: 20px;
   border-radius: 5px;
 
+  
   .sidebar-wrapper{
     width: $full-width;
     min-height: 100%;
@@ -40,7 +41,15 @@
     z-index: 4;
     position: relative;
     overflow: auto;
+    
+    .zalius {
+      font-size: 2rem;
+    }
 
+    .nav-link {
+      font-size: 0.85rem;
+
+    }
     .dropdown .dropdown-backdrop{
       display: none !important;
     }

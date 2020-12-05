@@ -68,7 +68,8 @@ class Sidebar extends React.Component {
             onClick={this.props.toggleSidebar}
           >
             <div className="logo-img">
-              <img src={logo.imgSrc} alt="react-logo" />
+            <i class="zalius fas fa-chart-line"></i>
+             
             </div>
           </a>
         );
