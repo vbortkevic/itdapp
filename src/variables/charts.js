@@ -47,7 +47,7 @@ let chart1_2_options = {
         },
         ticks: {
           suggestedMin: 60,
-          suggestedMax: 125,
+          suggestedMax: 100,
           padding: 20,
           fontColor: "#9a9a9a"
         }
@@ -79,42 +79,34 @@ let chartExample1 = {
 
     let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
 
-    gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
-    gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
-    gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
+    gradientStroke.addColorStop(1, "rgba(128,0,0,0.2)");
+    gradientStroke.addColorStop(0.4, "rgba(128,0,0,0.0)");
+    gradientStroke.addColorStop(0, "rgba(128,0,0,0)"); //blue colors
 
     return {
       labels: [
-        "JAN",
-        "FEB",
-        "MAR",
-        "APR",
-        "MAY",
-        "JUN",
-        "JUL",
-        "AUG",
-        "SEP",
-        "OCT",
-        "NOV",
-        "DEC"
+        "00:30", "01:00", "01:30", "02:00", "02:30", "03:00", "03:30", "04:00", "04:30", "05:00", "06:30", "07:00",
+        "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00",
+        "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00",
       ],
       datasets: [
         {
-          label: "My First dataset",
+          label: "Overall",
           fill: true,
           backgroundColor: gradientStroke,
-          borderColor: "#1f8ef1",
+          borderColor: "#800000",
           borderWidth: 2,
           borderDash: [],
           borderDashOffset: 0.0,
-          pointBackgroundColor: "#1f8ef1",
+          pointBackgroundColor: "#800000",
           pointBorderColor: "rgba(255,255,255,0)",
-          pointHoverBackgroundColor: "#1f8ef1",
+          pointHoverBackgroundColor: "#800000",
           pointBorderWidth: 20,
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100]
+          data: [69, 70, 71, 72, 74, 75, 77, 82, 85, 86, 84, 80, 76, 
+            72, 70, 70, 70, 72, 71, 73, 69, 69, 70, 69 ,72, 71, 74, 77, 75, 72, 74, 72, 72, 70, 70, 72]
         }
       ]
     };
@@ -130,22 +122,13 @@ let chartExample1 = {
 
     return {
       labels: [
-        "JAN",
-        "FEB",
-        "MAR",
-        "APR",
-        "MAY",
-        "JUN",
-        "JUL",
-        "AUG",
-        "SEP",
-        "OCT",
-        "NOV",
-        "DEC"
+        "00:30", "01:00", "01:30", "02:00", "02:30", "03:00", "03:30", "04:00", "04:30", "05:00", "06:30", "07:00",
+        "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00",
+        "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00",
       ],
       datasets: [
         {
-          label: "My First dataset",
+          label: "Earthqauke",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -159,7 +142,8 @@ let chartExample1 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120]
+          data: [8, 8, 7, 6, 6, 6, 5, 4, 5, 5, 4, 6, 2, 
+            2, 3, 3, 3, 2, 2, 3, 4, 5, 4, 4 ,4, 5, 4, 3, 3, 3, 3, 4, 5, 5, 5, 5]
         }
       ]
     };
@@ -175,18 +159,9 @@ let chartExample1 = {
 
     return {
       labels: [
-        "JAN",
-        "FEB",
-        "MAR",
-        "APR",
-        "MAY",
-        "JUN",
-        "JUL",
-        "AUG",
-        "SEP",
-        "OCT",
-        "NOV",
-        "DEC"
+        "00:30", "01:00", "01:30", "02:00", "02:30", "03:00", "03:30", "04:00", "04:30", "05:00", "06:30", "07:00",
+        "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00",
+        "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00",
       ],
       datasets: [
         {
@@ -204,7 +179,8 @@ let chartExample1 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [60, 80, 65, 130, 80, 105, 90, 130, 70, 115, 60, 130]
+          data: [74, 76, 78, 80, 82, 86, 89, 90, 92, 94, 92, 90, 88, 
+            86, 83, 78, 76, 74, 72, 70, 69, 69, 70, 69 ,72, 71, 74, 75, 75, 72, 74, 72, 72, 70, 70, 72]
         }
       ]
     };
@@ -226,10 +202,11 @@ let chartExample2 = {
     gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
 
     return {
-      labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+      labels: ["20:00", "21:00", "22:00", "23:00", "00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00",
+      "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00" ],
       datasets: [
         {
-          label: "Data",
+          label: "Water Levele",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -243,7 +220,7 @@ let chartExample2 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [80, 100, 70, 80, 120, 80]
+          data: [80, 82, 84, 86, 88, 90, 91, 92, 92, 94, 82, 80, 78, 76, 75, 74, 72, 71, 70, 70, 70, 71, 70, 70]
         }
       ]
     };
@@ -265,10 +242,10 @@ let chartExample3 = {
     gradientStroke.addColorStop(0, "rgba(119,52,169,0)"); //purple colors
 
     return {
-      labels: ["USA", "GER", "AUS", "UK", "RO", "BR"],
+      labels: ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"],
       datasets: [
         {
-          label: "Countries",
+          label: "Alerts",
           fill: true,
           backgroundColor: gradientStroke,
           hoverBackgroundColor: gradientStroke,
@@ -276,7 +253,7 @@ let chartExample3 = {
           borderWidth: 2,
           borderDash: [],
           borderDashOffset: 0.0,
-          data: [53, 20, 10, 80, 100, 45]
+          data: [0, 1, 3, 0, 0, 0]
         }
       ]
     };
@@ -306,8 +283,8 @@ let chartExample3 = {
             zeroLineColor: "transparent"
           },
           ticks: {
-            suggestedMin: 60,
-            suggestedMax: 120,
+            suggestedMin: 0,
+            suggestedMax: 5,
             padding: 20,
             fontColor: "#9e9e9e"
           }
@@ -344,10 +321,11 @@ const chartExample4 = {
     gradientStroke.addColorStop(0, "rgba(66,134,121,0)"); //green colors
 
     return {
-      labels: ["JUL", "AUG", "SEP", "OCT", "NOV"],
+      labels: ["20:00", "21:00", "22:00", "23:00", "00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00",
+      "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00" ],
       datasets: [
         {
-          label: "My First dataset",
+          label: "Temperature (celsius)",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#00d6b4",
@@ -361,7 +339,7 @@ const chartExample4 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [90, 27, 60, 12, 80]
+          data: [13, 13, 13, 13, 13, 14, 14, 14, 14, 15, 15, 15, 15, 16, 16, 17, 18, 18, 17, 17, 16, 16, 15, 15, 15]
         }
       ]
     };
@@ -393,8 +371,434 @@ const chartExample4 = {
             zeroLineColor: "transparent"
           },
           ticks: {
-            suggestedMin: 50,
-            suggestedMax: 125,
+            suggestedMin: 10,
+            suggestedMax: 20,
+            padding: 20,
+            fontColor: "#9e9e9e"
+          }
+        }
+      ],
+
+      xAxes: [
+        {
+          barPercentage: 1.6,
+          gridLines: {
+            drawBorder: false,
+            color: "rgba(0,242,195,0.1)",
+            zeroLineColor: "transparent"
+          },
+          ticks: {
+            padding: 20,
+            fontColor: "#9e9e9e"
+          }
+        }
+      ]
+    }
+  }
+};
+
+let chartExample5 = {
+  data: canvas => {
+    let ctx = canvas.getContext("2d");
+
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
+    gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
+    gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
+
+    return {
+      labels: ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"],
+      datasets: [
+        {
+          label: "Data",
+          fill: true,
+          backgroundColor: gradientStroke,
+          borderColor: "#1f8ef1",
+          borderWidth: 2,
+          borderDash: [],
+          borderDashOffset: 0.0,
+          pointBackgroundColor: "#1f8ef1",
+          pointBorderColor: "rgba(255,255,255,0)",
+          pointHoverBackgroundColor: "#1f8ef1",
+          pointBorderWidth: 20,
+          pointHoverRadius: 4,
+          pointHoverBorderWidth: 15,
+          pointRadius: 4,
+          data: [1.95, 2.7, 2, 2.5, 1.95, 2, 2.2]
+        }
+      ]
+    };
+  },
+  options: {
+    maintainAspectRatio: false,
+  legend: {
+    display: false
+  },
+  tooltips: {
+    backgroundColor: "#f5f5f5",
+    titleFontColor: "#333",
+    bodyFontColor: "#666",
+    bodySpacing: 4,
+    xPadding: 12,
+    mode: "nearest",
+    intersect: 0,
+    position: "nearest"
+  },
+  responsive: true,
+  scales: {
+    yAxes: [
+      {
+        barPercentage: 1.6,
+        gridLines: {
+          drawBorder: false,
+          color: "rgba(29,140,248,0.0)",
+          zeroLineColor: "transparent"
+        },
+        ticks: {
+          suggestedMin: 1,
+          suggestedMax: 3,
+          padding: 20,
+          fontColor: "#9a9a9a"
+        }
+      }
+    ],
+    xAxes: [
+      {
+        barPercentage: 1.6,
+        gridLines: {
+          drawBorder: false,
+          color: "rgba(29,140,248,0.1)",
+          zeroLineColor: "transparent"
+        },
+        ticks: {
+          padding: 20,
+          fontColor: "#9a9a9a"
+        }
+      }
+    ]
+  }
+  }
+};
+
+let chartExample6 = {
+  data: canvas => {
+    let ctx = canvas.getContext("2d");
+
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke.addColorStop(1, "rgba(66,134,121,0.2)");
+    gradientStroke.addColorStop(0.4, "rgba(66,134,121,0.0)");
+    gradientStroke.addColorStop(0, "rgba(66,134,121,0.0)"); //blue colors
+
+    return {
+      labels: ["20:00", "21:00", "22:00", "23:00", "00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00",
+      "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00"],
+      datasets: [
+        {
+          label: "Data",
+          fill: true,
+          backgroundColor: gradientStroke,
+          borderColor: "#00d6b4",
+          borderWidth: 2,
+          borderDash: [],
+          borderDashOffset: 0.0,
+          pointBackgroundColor: "#00d6b4",
+          pointBorderColor: "rgba(255,255,255,0)",
+          pointHoverBackgroundColor: "#00d6b4",
+          pointBorderWidth: 20,
+          pointHoverRadius: 4,
+          pointHoverBorderWidth: 15,
+          pointRadius: 4,
+          data: [1.4, 2.5, 1.6, 2.3, 1.5, 2.3, 1.2, 2.2, 1.7, 2.3, 1.8, 2.4, 1.5, 2.3, 1.5, 2.5, 1.4, 2.2, 1.3, 2.4, 1.6, 2.3, 1.4, 2.5]
+        }
+      ]
+    };
+  },
+  options: {
+    maintainAspectRatio: false,
+  legend: {
+    display: false
+  },
+  tooltips: {
+    backgroundColor: "#f5f5f5",
+    titleFontColor: "#333",
+    bodyFontColor: "#666",
+    bodySpacing: 4,
+    xPadding: 12,
+    mode: "nearest",
+    intersect: 0,
+    position: "nearest"
+  },
+  responsive: true,
+  scales: {
+    yAxes: [
+      {
+        barPercentage: 1.6,
+        gridLines: {
+          drawBorder: false,
+          color: "rgba(29,140,248,0.0)",
+          zeroLineColor: "transparent"
+        },
+        ticks: {
+          suggestedMin: 1,
+          suggestedMax: 2.5,
+          padding: 20,
+          fontColor: "#9a9a9a"
+        }
+      }
+    ],
+    xAxes: [
+      {
+        barPercentage: 1.6,
+        gridLines: {
+          drawBorder: false,
+          color: "rgba(29,140,248,0.1)",
+          zeroLineColor: "transparent"
+        },
+        ticks: {
+          padding: 20,
+          fontColor: "#9a9a9a"
+        }
+      }
+    ]
+  }
+  }
+};
+
+let chartExample7 = {
+  data: canvas => {
+    let ctx = canvas.getContext("2d");
+
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
+    gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
+    gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
+
+    return {
+      labels: ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"],
+      datasets: [
+        {
+          label: "Data",
+          fill: true,
+          backgroundColor: gradientStroke,
+          borderColor: "#1f8ef1",
+          borderWidth: 2,
+          borderDash: [],
+          borderDashOffset: 0.0,
+          pointBackgroundColor: "#1f8ef1",
+          pointBorderColor: "rgba(255,255,255,0)",
+          pointHoverBackgroundColor: "#1f8ef1",
+          pointBorderWidth: 20,
+          pointHoverRadius: 4,
+          pointHoverBorderWidth: 15,
+          pointRadius: 4,
+          data: [90, 90, 85, 65, 50, 50, 50]
+        }
+      ]
+    };
+  },
+  options: {
+    maintainAspectRatio: false,
+  legend: {
+    display: false
+  },
+  tooltips: {
+    backgroundColor: "#f5f5f5",
+    titleFontColor: "#333",
+    bodyFontColor: "#666",
+    bodySpacing: 4,
+    xPadding: 12,
+    mode: "nearest",
+    intersect: 0,
+    position: "nearest"
+  },
+  responsive: true,
+  scales: {
+    yAxes: [
+      {
+        barPercentage: 1.6,
+        gridLines: {
+          drawBorder: false,
+          color: "rgba(29,140,248,0.0)",
+          zeroLineColor: "transparent"
+        },
+        ticks: {
+          suggestedMin: 20,
+          suggestedMax: 100,
+          padding: 20,
+          fontColor: "#9a9a9a"
+        }
+      }
+    ],
+    xAxes: [
+      {
+        barPercentage: 1.6,
+        gridLines: {
+          drawBorder: false,
+          color: "rgba(29,140,248,0.1)",
+          zeroLineColor: "transparent"
+        },
+        ticks: {
+          padding: 20,
+          fontColor: "#9a9a9a"
+        }
+      }
+    ]
+  }
+  }
+};
+
+const chartExample8 = {
+  data: canvas => {
+    let ctx = canvas.getContext("2d");
+
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke.addColorStop(1, "rgba(66,134,121,0.15)");
+    gradientStroke.addColorStop(0.4, "rgba(66,134,121,0.0)"); //green colors
+    gradientStroke.addColorStop(0, "rgba(66,134,121,0)"); //green colors
+
+    return {
+      labels: ["20:00", "21:00", "22:00", "23:00", "00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00",
+      "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00" ],
+      datasets: [
+        {
+          label: "Temperature (celsius)",
+          fill: true,
+          backgroundColor: gradientStroke,
+          borderColor: "#00d6b4",
+          borderWidth: 2,
+          borderDash: [],
+          borderDashOffset: 0.0,
+          pointBackgroundColor: "#00d6b4",
+          pointBorderColor: "rgba(255,255,255,0)",
+          pointHoverBackgroundColor: "#00d6b4",
+          pointBorderWidth: 20,
+          pointHoverRadius: 4,
+          pointHoverBorderWidth: 15,
+          pointRadius: 4,
+          data: [20, 18, 17, 17, 16, 16, 16, 16, 16, 17, 17, 18, 18, 19, 20, 24, 26, 27, 28, 30, 28, 28, 27, 26, 20]
+        }
+      ]
+    };
+  },
+  options: {
+    maintainAspectRatio: false,
+    legend: {
+      display: false
+    },
+
+    tooltips: {
+      backgroundColor: "#f5f5f5",
+      titleFontColor: "#333",
+      bodyFontColor: "#666",
+      bodySpacing: 4,
+      xPadding: 12,
+      mode: "nearest",
+      intersect: 0,
+      position: "nearest"
+    },
+    responsive: true,
+    scales: {
+      yAxes: [
+        {
+          barPercentage: 1.6,
+          gridLines: {
+            drawBorder: false,
+            color: "rgba(29,140,248,0.0)",
+            zeroLineColor: "transparent"
+          },
+          ticks: {
+            suggestedMin: 10,
+            suggestedMax: 40,
+            padding: 20,
+            fontColor: "#9e9e9e"
+          }
+        }
+      ],
+
+      xAxes: [
+        {
+          barPercentage: 1.6,
+          gridLines: {
+            drawBorder: false,
+            color: "rgba(0,242,195,0.1)",
+            zeroLineColor: "transparent"
+          },
+          ticks: {
+            padding: 20,
+            fontColor: "#9e9e9e"
+          }
+        }
+      ]
+    }
+  }
+};
+
+const chartExample9 = {
+  data: canvas => {
+    let ctx = canvas.getContext("2d");
+
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke.addColorStop(1, "rgba(66,134,121,0.15)");
+    gradientStroke.addColorStop(0.4, "rgba(66,134,121,0.0)"); //green colors
+    gradientStroke.addColorStop(0, "rgba(66,134,121,0)"); //green colors
+
+    return {
+      labels: ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"],
+      datasets: [
+        {
+          label: "Temperature (celsius)",
+          fill: true,
+          backgroundColor: gradientStroke,
+          borderColor: "#00d6b4",
+          borderWidth: 2,
+          borderDash: [],
+          borderDashOffset: 0.0,
+          pointBackgroundColor: "#00d6b4",
+          pointBorderColor: "rgba(255,255,255,0)",
+          pointHoverBackgroundColor: "#00d6b4",
+          pointBorderWidth: 20,
+          pointHoverRadius: 4,
+          pointHoverBorderWidth: 15,
+          pointRadius: 4,
+          data: [80, 95, 75, 65, 50, 50, 55]
+        }
+      ]
+    };
+  },
+  options: {
+    maintainAspectRatio: false,
+    legend: {
+      display: false
+    },
+
+    tooltips: {
+      backgroundColor: "#f5f5f5",
+      titleFontColor: "#333",
+      bodyFontColor: "#666",
+      bodySpacing: 4,
+      xPadding: 12,
+      mode: "nearest",
+      intersect: 0,
+      position: "nearest"
+    },
+    responsive: true,
+    scales: {
+      yAxes: [
+        {
+          barPercentage: 1.6,
+          gridLines: {
+            drawBorder: false,
+            color: "rgba(29,140,248,0.0)",
+            zeroLineColor: "transparent"
+          },
+          ticks: {
+            suggestedMin: 10,
+            suggestedMax: 100,
             padding: 20,
             fontColor: "#9e9e9e"
           }
@@ -423,5 +827,10 @@ module.exports = {
   chartExample1, // in src/views/Dashboard.js
   chartExample2, // in src/views/Dashboard.js
   chartExample3, // in src/views/Dashboard.js
-  chartExample4 // in src/views/Dashboard.js
+  chartExample4, // in src/views/Dashboard.js
+  chartExample5, // in src/views/Dashboard.js
+  chartExample6, // in src/views/Dashboard.js
+  chartExample7, // in src/views/Dashboard.js
+  chartExample8, // in src/views/Dashboard.js
+  chartExample9 // in src/views/Dashboard.js
 };
