@@ -79,7 +79,7 @@ let chartExample1 = {
 
     let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
 
-    gradientStroke.addColorStop(1, "rgba(128,0,0,0.2)");
+    gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
     gradientStroke.addColorStop(0.4, "rgba(128,0,0,0.0)");
     gradientStroke.addColorStop(0, "rgba(128,0,0,0)"); //blue colors
 
@@ -94,13 +94,13 @@ let chartExample1 = {
           label: "Overall",
           fill: true,
           backgroundColor: gradientStroke,
-          borderColor: "#800000",
+          borderColor: "#1f8ef1",
           borderWidth: 2,
           borderDash: [],
           borderDashOffset: 0.0,
-          pointBackgroundColor: "#800000",
+          pointBackgroundColor: "#1f8ef1",
           pointBorderColor: "rgba(255,255,255,0)",
-          pointHoverBackgroundColor: "#800000",
+          pointHoverBackgroundColor: "#1f8ef1",
           pointBorderWidth: 20,
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
@@ -823,6 +823,169 @@ const chartExample9 = {
   }
 };
 
+let chart10_options = {
+  maintainAspectRatio: false,
+  legend: {
+    display: false
+  },
+  tooltips: {
+    backgroundColor: "#f5f5f5",
+    titleFontColor: "#333",
+    bodyFontColor: "#666",
+    bodySpacing: 4,
+    xPadding: 12,
+    mode: "nearest",
+    intersect: 0,
+    position: "nearest"
+  },
+  responsive: true,
+  scales: {
+    yAxes: [
+      {
+        barPercentage: 1.6,
+        gridLines: {
+          drawBorder: false,
+          color: "rgba(29,140,248,0.0)",
+          zeroLineColor: "transparent"
+        },
+        ticks: {
+          suggestedMin: 60,
+          suggestedMax: 100,
+          padding: 20,
+          fontColor: "#9a9a9a"
+        }
+      }
+    ],
+    xAxes: [
+      {
+        barPercentage: 1.6,
+        gridLines: {
+          drawBorder: false,
+          color: "rgba(29,140,248,0.1)",
+          zeroLineColor: "transparent"
+        },
+        ticks: {
+          padding: 20,
+          fontColor: "#9a9a9a"
+        }
+      }
+    ]
+  }
+};
+
+// #########################################
+// // // used inside src/views/Dashboard.js
+// #########################################
+let chartExample10 = {
+  data1: canvas => {
+    let ctx = canvas.getContext("2d");
+
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke.addColorStop(1, "rgba(128,0,0,0.2)");
+    gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
+    gradientStroke.addColorStop(0, "rgba(29,140,248,0.0)"); //blue colors
+
+    return {
+      labels: [
+        "20:00", "21:00", "22:00", "23:00", "00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00",
+      "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00" , 
+      ],
+      datasets: [
+        {
+          label: "Overall",
+          fill: true,
+          backgroundColor: gradientStroke,
+          borderColor: "#1f8ef1",
+          borderWidth: 2,
+          borderDash: [],
+          borderDashOffset: 0.0,
+          pointBackgroundColor: "#1f8ef1",
+          pointBorderColor: "rgba(255,255,255,0)",
+          pointHoverBackgroundColor: "#1f8ef1",
+          pointBorderWidth: 20,
+          pointHoverRadius: 4,
+          pointHoverBorderWidth: 15,
+          pointRadius: 4,
+          data: [69, 70, 71, 72, 74, 75, 74, 72, 72, 74, 75, 74,73, 74, 74, 75, 74,71, 72, 74, 75, 74,73, 72, 74, 75, 74]
+        }
+      ]
+    };
+  },
+  data2: canvas => {
+    let ctx = canvas.getContext("2d");
+
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
+    gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
+    gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
+
+    return {
+      labels: [
+        "MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"
+      ],
+      datasets: [
+        {
+          label: "Earthqauke",
+          fill: true,
+          backgroundColor: gradientStroke,
+          borderColor: "#1f8ef1",
+          borderWidth: 2,
+          borderDash: [],
+          borderDashOffset: 0.0,
+          pointBackgroundColor: "#1f8ef1",
+          pointBorderColor: "rgba(255,255,255,0)",
+          pointHoverBackgroundColor: "#1f8ef1",
+          pointBorderWidth: 20,
+          pointHoverRadius: 4,
+          pointHoverBorderWidth: 15,
+          pointRadius: 4,
+          data: [82, 83, 84, 85, 84, 85, 86]
+        }
+      ]
+    };
+  },
+  data3: canvas => {
+    let ctx = canvas.getContext("2d");
+
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
+    gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
+    gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
+
+    return {
+      labels: [
+        "00:30", "01:00", "01:30", "02:00", "02:30", "03:00", "03:30", "04:00", "04:30", "05:00", "06:30", "07:00",
+        "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00",
+        "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00",
+      ],
+      datasets: [
+        {
+          label: "My First dataset",
+          fill: true,
+          backgroundColor: gradientStroke,
+          borderColor: "#1f8ef1",
+          borderWidth: 2,
+          borderDash: [],
+          borderDashOffset: 0.0,
+          pointBackgroundColor: "#1f8ef1",
+          pointBorderColor: "rgba(255,255,255,0)",
+          pointHoverBackgroundColor: "#1f8ef1",
+          pointBorderWidth: 20,
+          pointHoverRadius: 4,
+          pointHoverBorderWidth: 15,
+          pointRadius: 4,
+          data: [74, 76, 78, 80, 82, 86, 89, 90, 92, 94, 92, 90, 88, 
+            86, 83, 78, 76, 74, 72, 70, 69, 69, 70, 69 ,72, 71, 74, 75, 75, 72, 74, 72, 72, 70, 70, 72]
+        }
+      ]
+    };
+  },
+  options: chart10_options
+};
+
 module.exports = {
   chartExample1, // in src/views/Dashboard.js
   chartExample2, // in src/views/Dashboard.js
@@ -832,5 +995,6 @@ module.exports = {
   chartExample6, // in src/views/Dashboard.js
   chartExample7, // in src/views/Dashboard.js
   chartExample8, // in src/views/Dashboard.js
-  chartExample9 // in src/views/Dashboard.js
+  chartExample9, // in src/views/Dashboard.js
+  chartExample10 // in src/views/Dashboard.js
 };
