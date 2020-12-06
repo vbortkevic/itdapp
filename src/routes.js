@@ -15,6 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+import AlertTable from "views/AlertTable.js";
 import Dashboard from "views/Dashboard.js";
 import EmptyScreen from "views/EmptyScreen.js";
 import LogTable from "views/LogTable.js";
@@ -91,7 +92,7 @@ var routes = [
     name: "Alerts",
     rtlName: "قائمة الجدول",
     icon: "fas fa-bell",
-    component: EmptyScreen,
+    component: AlertTable,
     layout: "/admin"
   },
   {

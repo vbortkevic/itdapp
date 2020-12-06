@@ -52,43 +52,43 @@ class LogTable extends React.Component {
                     </thead>
                     <tbody>
                       <tr>
-                        <td>2020-12-04T01:00:10Z</td>
+                        <td>2020-12-06T01:00:10Z</td>
                         <td>Sensors</td>
                         <td>Information</td>
                         <td>Received seismic data from 33 sensors.</td>
                       </tr>
                       <tr>
-                        <td>2020-12-04T00:57:13Z</td>
+                        <td>2020-12-06T00:57:13Z</td>
                         <td>Cloud</td>
                         <td>Information</td>
                         <td>Weather forecast update received.</td>
                       </tr>
                       <tr>
-                        <td>2020-12-04T00:56:43Z</td>
+                        <td>2020-12-06T00:56:43Z</td>
                         <td>Cloud</td>
                         <td>Warning</td>
                         <td>Weather forecast unavailable: 503.</td>
                       </tr>
                       <tr>
-                        <td>2020-12-04T00:56:13Z</td>
+                        <td>2020-12-06T00:56:13Z</td>
                         <td>Cloud</td>
                         <td>Warning</td>
                         <td>Weather forecast unavailable: 503.</td>
                       </tr>
                       <tr>
-                        <td>2020-12-04T00:55:22Z</td>
+                        <td>2020-12-06T00:55:22Z</td>
                         <td>Sensors</td>
                         <td>Information</td>
                         <td>Received soil conductivity data from 72 sensors.</td>
                       </tr>
                       <tr>
-                        <td>2020-12-04T00:54:42Z</td>
+                        <td>2020-12-06T00:54:42Z</td>
                         <td>Sensors</td>
                         <td>Information</td>
                         <td>Received local weather data from 15 sensors.</td>
                       </tr>
                       <tr>
-                        <td>2020-12-04T00:00:00Z</td>
+                        <td>2020-12-06T00:00:00Z</td>
                         <td>Cloud</td>
                         <td>Information</td>
                         <td>Latest satellite images received.</td>
