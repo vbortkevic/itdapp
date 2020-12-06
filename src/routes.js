@@ -15,10 +15,12 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+import AlertTable from "views/AlertTable.js";
 import Dashboard from "views/Dashboard.js";
-import Weather from "views/Weather.js";
 import EmptyScreen from "views/EmptyScreen.js";
 import Aerial from "views/Aerial.js";
+import LogTable from "views/LogTable.js";
+import Weather from "views/Weather.js";
 
 var routes = [
   {
@@ -38,7 +40,7 @@ var routes = [
     layout: "/admin"
   },
   {
-    path: "/Overtopping",
+    path: "/overtopping",
     name: "Overtopping risks",
     rtlName: "الرموز",
     icon: "fas fa-sort-amount-up",
@@ -91,7 +93,7 @@ var routes = [
     name: "Alerts",
     rtlName: "قائمة الجدول",
     icon: "fas fa-bell",
-    component: EmptyScreen,
+    component: AlertTable,
     layout: "/admin"
   },
   {
@@ -107,7 +109,7 @@ var routes = [
     name: "Logs",
     rtlName: "طباعة",
     icon: "fas fa-book",
-    component: EmptyScreen,
+    component: LogTable,
     layout: "/admin"
   }
 ];
