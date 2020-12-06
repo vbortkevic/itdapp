@@ -16,9 +16,17 @@
       }
   }
 
+  .logout-button {
+    color: white;
+  }
+
   .navbar-wrapper {
     display: flex;
     align-items: center;
+
+    .logout-button {
+      color: white;
+    }
   }
 
   .navbar-text {

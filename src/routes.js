@@ -16,12 +16,8 @@
 
 */
 import Dashboard from "views/Dashboard.js";
-import Icons from "views/Icons.js";
-import Map from "views/Map.js";
-import Notifications from "views/Notifications.js";
-import TableList from "views/TableList.js";
-import Typography from "views/Typography.js";
-import UserProfile from "views/UserProfile.js";
+import Weather from "views/Weather.js";
+import EmptyScreen from "views/EmptyScreen.js";
 
 var routes = [
   {
@@ -33,84 +29,84 @@ var routes = [
     layout: "/admin"
   },
   {
-    path: "/icons",
+    path: "/earthquake",
     name: "earthquake risks",
     rtlName: "الرموز",
     icon: "fas fa-exclamation-triangle",
-    component: Icons,
+    component: EmptyScreen,
     layout: "/admin"
   },
   {
-    path: "/icons",
+    path: "/Overtopping",
     name: "Overtopping risks",
     rtlName: "الرموز",
     icon: "fas fa-sort-amount-up",
-    component: Icons,
+    component: EmptyScreen,
     layout: "/admin"
   },
   {
-    path: "/map",
+    path: "/slope",
     name: "slope stability",
     rtlName: "خرائط",
     icon: "fas fa-grip-lines",
-    component: Map,
+    component: EmptyScreen,
     layout: "/admin"
   },
   {
-    path: "/user-profile",
+    path: "/areal",
     name: "Areal Photos",
     rtlName: "ملف تعريفي للمستخدم",
     icon: "fab fa-avianex",
-    component: UserProfile,
+    component: EmptyScreen,
     layout: "/admin"
   },
 
   {
-    path: "/tables",
+    path: "/sensors",
     name: "Ground sensors",
     rtlName: "قائمة الجدول",
     icon: "fas fa-record-vinyl",
-    component: TableList,
+    component: EmptyScreen,
     layout: "/admin"
   },
   {
-    path: "/tables",
+    path: "/weather",
     name: "Weather sensors",
     rtlName: "قائمة الجدول",
     icon: "fas fa-cloud-moon-rain",
-    component: TableList,
+    component: Weather,
     layout: "/admin"
   },
   {
-    path: "/tables",
+    path: "/watersensors",
     name: "Water sensors",
     rtlName: "قائمة الجدول",
     icon: "fas fa-water",
-    component: TableList,
+    component: EmptyScreen,
     layout: "/admin"
   },
   {
-    path: "/tables",
+    path: "/alerts",
     name: "Alerts",
     rtlName: "قائمة الجدول",
     icon: "fas fa-bell",
-    component: TableList,
+    component: EmptyScreen,
     layout: "/admin"
   },
   {
-    path: "/notifications",
+    path: "/reports",
     name: "Reports",
     rtlName: "إخطارات",
     icon: "fas fa-clipboard-list",
-    component: Notifications,
+    component: EmptyScreen,
     layout: "/admin"
   },
   {
-    path: "/typography",
+    path: "/logs",
     name: "Logs",
     rtlName: "طباعة",
     icon: "fas fa-book",
-    component: Typography,
+    component: EmptyScreen,
     layout: "/admin"
   }
 ];

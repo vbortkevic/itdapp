@@ -267,6 +267,10 @@ textarea.form-control{
 
 .search-bar{
     margin-left: $margin-lg-vertical;
+
+    &.logout-button {
+        color: white;
+    }
       .btn{
         margin: 0;
       }
