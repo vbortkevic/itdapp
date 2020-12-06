@@ -107,7 +107,7 @@ var routes = [
     name: "Logs",
     rtlName: "طباعة",
     icon: "fas fa-book",
-    component: EmptyScreen,
+    component: LogTable,
     layout: "/admin"
   }
 ];
