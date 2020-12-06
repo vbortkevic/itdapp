@@ -16,8 +16,9 @@
 
 */
 import Dashboard from "views/Dashboard.js";
-import Weather from "views/Weather.js";
 import EmptyScreen from "views/EmptyScreen.js";
+import LogTable from "views/LogTable.js";
+import Weather from "views/Weather.js";
 
 var routes = [
   {
@@ -37,7 +38,7 @@ var routes = [
     layout: "/admin"
   },
   {
-    path: "/Overtopping",
+    path: "/overtopping",
     name: "Overtopping risks",
     rtlName: "الرموز",
     icon: "fas fa-sort-amount-up",
