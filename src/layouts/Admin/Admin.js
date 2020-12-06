@@ -117,7 +117,7 @@ class Admin extends React.Component {
             bgColor={this.state.backgroundColor}
             logo={{
               outterLink: "https://itdapp.z6.web.core.windows.net/",
-              text: "Intelligent Tailing Dam Application",
+              text: "Intelligent Tailings Dam Application",
               imgSrc: logo
             }}
             toggleSidebar={this.toggleSidebar}
