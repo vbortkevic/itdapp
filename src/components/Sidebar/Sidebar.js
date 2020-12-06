@@ -75,10 +75,10 @@ class Sidebar extends React.Component {
         );
         logoText = (
           <a
-            href={logo.outterLink}
+            href=""
             className="simple-text logo-normal"
             target="_blank"
-            onClick={this.props.toggleSidebar}
+            onClick={() => {}}
           >
             Minario de ferro
           </a>
