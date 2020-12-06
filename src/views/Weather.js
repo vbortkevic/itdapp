@@ -23,6 +23,8 @@ import { Line, Bar } from "react-chartjs-2";
 
 // reactstrap components
 import {
+    Button,
+    ButtonGroup,
   Card,
   CardHeader,
   CardBody,
@@ -39,6 +41,8 @@ import {
   chartExample6,
   chartExample7,
   chartExample8,
+  chartExample1,
+  chartExample10,
 } from "variables/charts.js";
 
 class Weather extends React.Component {
@@ -208,7 +212,79 @@ class Weather extends React.Component {
               </Card>
             </Col>
             </Row>
-         
+            <Row>
+            <Col xs="12">
+              <Card className="card-chart">
+                <CardHeader>
+                  <Row>
+                    <Col className="text-left" sm="6">               
+                      <CardTitle tag="h4"><i className="fas fa-bolt"></i> Storm risk / Forecast </CardTitle>
+                    </Col>
+                    <Col sm="6">
+                      <ButtonGroup
+                        className="btn-group-toggle float-right"
+                        data-toggle="buttons"
+                      >
+                        <Button
+                          tag="label"
+                          className={classNames("btn-simple", {
+                            active: this.state.bigChartData === "data1"
+                          })}
+                          color="info"
+                          id="0"
+                          size="sm"
+                          onClick={() => this.setBgChartData("data1")}
+                        >
+                          <input
+                            defaultChecked
+                            className="d-none"
+                            name="options"
+                            type="radio"
+                          />
+                          <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
+                            Current
+                          </span>
+                          <span className="d-block d-sm-none">
+                            <i className="tim-icons icon-single-02" />
+                          </span>
+                        </Button>
+                        <Button
+                          color="info"
+                          id="1"
+                          size="sm"
+                          tag="label"
+                          className={classNames("btn-simple", {
+                            active: this.state.bigChartData === "data2"
+                          })}
+                          onClick={() => this.setBgChartData("data2")}
+                        >
+                          <input
+                            className="d-none"
+                            name="options"
+                            type="radio"
+                          />
+                          <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
+                          Next Week
+                          </span>
+                          <span className="d-block d-sm-none">
+                            <i className="tim-icons icon-gift-2" />
+                          </span>
+                        </Button>
+                      </ButtonGroup>
+                    </Col>
+                  </Row>
+                </CardHeader>
+                <CardBody>
+                  <div className="chart-area">
+                    <Line
+                      data={chartExample10[this.state.bigChartData]}
+                      options={chartExample10.options}
+                    />
+                  </div>
+                </CardBody>
+              </Card>
+            </Col>
+          </Row>
         </div>
       </>
     );
