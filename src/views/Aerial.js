@@ -50,7 +50,7 @@ class Aerial extends React.Component {
       <>
         <div className="content">
             <Row>
-                <img src={dam1} alt="Logo" />
+                <img src={dam} alt="Logo" />
             </Row>
         </div>
       </>
